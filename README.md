@@ -26,7 +26,28 @@ A modern React application built with Vite, featuring TanStack Router for file-b
 - Node.js (latest LTS recommended)
 - pnpm package manager
 
-### Installation & Development
+### Development Container (Recommended)
+
+This project includes a complete development container setup for consistent development environments:
+
+```bash
+# Option 1: Open in VS Code with Dev Containers extension
+# - Install "Dev Containers" extension in VS Code
+# - Open project folder in VS Code
+# - Click "Reopen in Container" when prompted
+
+# Option 2: Use Claude Code CLI
+claude code
+```
+
+**Container includes:**
+- Node.js 22 with pnpm, npm, and yarn
+- Claude Code CLI for AI-assisted development
+- Pre-configured VS Code with ESLint, Prettier, GitLens
+- Zsh shell with Powerlevel10k theme
+- All development tools and utilities pre-installed
+
+### Local Installation & Development
 
 ```bash
 # Install dependencies
@@ -204,6 +225,8 @@ pnpm add @tanstack/react-query @tanstack/react-query-devtools
 - **TanStack React Devtools** for React debugging  
 - **TypeScript** strict mode with path aliases
 - **Web Vitals** reporting
+- **Development Container** with pre-configured environment
+- **Claude Code CLI** integration for AI-assisted development
 
 ## 📚 Documentation & Resources
 

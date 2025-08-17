@@ -58,6 +58,35 @@ This is a React application built with:
 - Styles: `src/styles.css`
 - Generated files: `src/routeTree.gen.ts` (auto-generated, do not edit)
 
+## Development Container (Devcontainer)
+
+This repository includes a development container configuration for consistent development environments:
+
+**Container Features:**
+- Based on Node.js 22 with pre-installed development tools
+- Claude Code CLI pre-installed for AI-assisted development
+- Zsh shell with Powerlevel10k theme and useful plugins (git, fzf)
+- VS Code extensions: ESLint, Prettier, GitLens
+- Persistent bash history and Claude configuration via volumes
+- Network capabilities for advanced development scenarios
+
+**Included Tools:**
+- Package managers: npm, pnpm (via corepack), yarn (via corepack)
+- Development: git, gh (GitHub CLI), less, nano, vim
+- Network utilities: iptables, ipset, iproute2, dnsutils
+- Other utilities: fzf, jq, git-delta, aggregate
+
+**VS Code Configuration:**
+- Format on save enabled with Prettier
+- ESLint auto-fix on save
+- Zsh as default terminal
+- Optimized settings for React/TypeScript development
+
+**Usage:**
+- Open in VS Code with Dev Containers extension
+- Or use `claude code` from outside the container to leverage the environment
+- Container automatically sets up firewall rules and development environment
+
 ## TypeScript Configuration
 - Uses ESNext modules with bundler resolution
 - Strict mode enabled with additional linting rules
